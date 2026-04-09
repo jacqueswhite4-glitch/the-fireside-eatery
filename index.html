@@ -11,10 +11,12 @@
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
         
         .logo-font { font-family: 'Playfair Display', serif; }
+        
         .hero-bg {
-            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), 
+            background: linear-gradient(rgba(0,0,0,0.68), rgba(0,0,0,0.78)), 
                         url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat fixed;
         }
+        
         .nav-link {
             position: relative;
         }
@@ -44,10 +46,10 @@
     <!-- NAVBAR -->
     <nav class="bg-[#1a140f] border-b border-[#f59e0b]/20 sticky top-0 z-50">
         <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
-            <!-- Logo -->
+            <!-- Logo with proper "FIRESIDE" -->
             <div class="flex items-center gap-x-3">
                 <div class="flex items-center gap-x-2">
-                    <span class="logo-font text-3xl tracking-tight font-bold text-white">THE FIRESIDE</span>
+                    <span class="logo-font text-3xl tracking-[-1px] font-bold text-white">THE FIRESIDE</span>
                     <span class="text-3xl flame">🔥</span>
                 </div>
                 <div class="text-[10px] leading-none font-medium tracking-[1px] text-amber-400 pt-1">
@@ -57,19 +59,17 @@
 
             <!-- Menu -->
             <div class="hidden md:flex items-center gap-x-8 text-sm uppercase tracking-widest font-medium">
-                <a href="#home" onclick="smoothScroll('home')" class="nav-link text-white hover:text-amber-300">HOME</a>
-                <a href="#story" onclick="smoothScroll('story')" class="nav-link text-white hover:text-amber-300">OUR STORY</a>
-                <a href="#menu" onclick="smoothScroll('menu')" class="nav-link text-white hover:text-amber-300">MENU</a>
-                <a href="#venue" onclick="smoothScroll('venue')" class="nav-link text-white hover:text-amber-300">VENUE</a>
-                <a href="#hours" onclick="smoothScroll('hours')" class="nav-link text-white hover:text-amber-300">HOURS</a>
-                <a href="#contact" onclick="smoothScroll('contact')" class="nav-link text-white hover:text-amber-300">CONTACT</a>
+                <a href="#home" onclick="smoothScroll('home')" class="nav-link">HOME</a>
+                <a href="#story" onclick="smoothScroll('story')" class="nav-link">OUR STORY</a>
+                <a href="#menu" onclick="smoothScroll('menu')" class="nav-link">MENU</a>
+                <a href="#venue" onclick="smoothScroll('venue')" class="nav-link">VENUE</a>
+                <a href="#hours" onclick="smoothScroll('hours')" class="nav-link">HOURS</a>
+                <a href="#contact" onclick="smoothScroll('contact')" class="nav-link">CONTACT</a>
             </div>
 
-            <!-- Reserve Button -->
             <a href="https://wa.me/27825524605" target="_blank"
                class="bg-[#f59e0b] hover:bg-amber-400 text-[#1a140f] px-8 py-3 rounded-full font-semibold flex items-center gap-x-2 text-sm">
-                <i class="fa-brands fa-whatsapp"></i>
-                RESERVE
+                <i class="fa-brands fa-whatsapp"></i> RESERVE
             </a>
         </div>
     </nav>
@@ -85,36 +85,53 @@
             </p>
             <div class="mt-16">
                 <a href="#menu" onclick="smoothScroll('menu')"
-                   class="inline-block px-12 py-5 bg-white text-[#1a140f] font-semibold text-lg rounded-full hover:scale-105 transition">
+                   class="inline-block px-12 py-5 bg-white text-[#1a140f] font-semibold text-lg rounded-full hover:scale-105">
                     EXPLORE THE MENU
                 </a>
             </div>
         </div>
-
-        <!-- Scroll indicator -->
-        <div class="absolute bottom-12 left-1/2 flex flex-col items-center text-white/60 text-xs tracking-widest">
-            SCROLL TO DISCOVER
-            <i class="fa-solid fa-chevron-down mt-2 animate-bounce"></i>
-        </div>
     </section>
 
-    <!-- OUR STORY -->
+    <!-- OUR STORY / DEFINITION -->
     <section id="story" class="py-28 bg-[#1a140f]">
         <div class="max-w-screen-2xl mx-auto px-8 md:px-16">
-            <div class="max-w-3xl mx-auto text-center">
-                <span class="uppercase text-amber-400 text-sm tracking-[2px]">Our Philosophy</span>
-                <h2 class="logo-font text-6xl md:text-7xl tracking-tight mt-6 leading-none">
-                    The warmth of home,<br>elevated.
-                </h2>
-                <p class="mt-10 text-lg text-[#f5e8d3]/80 max-w-2xl mx-auto">
-                    We believe in simple pleasures done exceptionally well — a crackling fire, a perfectly poured brandy, 
-                    and food that brings people together.
-                </p>
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <span class="uppercase text-amber-400 text-sm tracking-widest">Our Story</span>
+                    <h2 class="logo-font text-6xl md:text-7xl tracking-tight mt-6">The Fireside Philosophy</h2>
+                </div>
+
+                <!-- Exact text from your image -->
+                <div class="bg-[#0f0a05] rounded-3xl p-12 md:p-16 border border-amber-400/10">
+                    <div class="grid md:grid-cols-12 gap-10">
+                        <div class="md:col-span-4">
+                            <p class="text-amber-400 text-sm font-medium">fireside — noun</p>
+                            <p class="mt-6 text-lg leading-relaxed">
+                                the area around a fireplace<br>
+                                (used especially with reference to a person’s home or family life).
+                            </p>
+                        </div>
+                        <div class="md:col-span-8">
+                            <p class="italic text-xl leading-relaxed">
+                                “he preferred the warmth of his own fireside 
+                                and the simple pleasures of a good cigar and a glass of brandy”
+                            </p>
+                            <p class="mt-10 text-sm text-amber-400/70">— The Fireside Definition</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-16 text-center max-w-2xl mx-auto">
+                    <p class="text-[#f5e8d3]/80 text-lg">
+                        At The Fireside, we bring this warmth to life — creating a space where good food, great company, 
+                        and the simple pleasures of life come together by the fire.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- INTERACTIVE MENU -->
+    <!-- INTERACTIVE MENU (kept from previous) -->
     <section id="menu" class="py-28 bg-[#0f0a05]">
         <div class="max-w-screen-2xl mx-auto px-8 md:px-16">
             <div class="flex justify-between items-end mb-12">
@@ -122,10 +139,8 @@
                     <span class="uppercase text-amber-400 text-sm">Signature Dishes</span>
                     <h2 class="logo-font text-6xl tracking-tight">Our Menu</h2>
                 </div>
-                <div class="text-right text-sm text-amber-400">Cigar lounge available on the deck</div>
             </div>
 
-            <!-- Filters -->
             <div class="flex flex-wrap gap-4 mb-12">
                 <input id="searchInput" type="text" placeholder="Search menu..." 
                        onkeyup="filterMenu()" 
@@ -149,9 +164,7 @@
                 </div>
             </div>
 
-            <div id="menuGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- JS populated -->
-            </div>
+            <div id="menuGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
         </div>
     </section>
 
@@ -162,16 +175,12 @@
                 <div>
                     <h2 class="logo-font text-6xl tracking-tight">A place to gather</h2>
                     <p class="mt-8 text-lg text-[#f5e8d3]/80">
-                        Whether it's an intimate dinner by the fire, a family celebration, or a private event — 
-                        our venue offers the perfect warm atmosphere with stunning views.
+                        Whether for an intimate dinner, family celebration, or private event — 
+                        our venue offers warmth, firelight, and unforgettable moments.
                     </p>
-                    <div class="mt-10 inline-flex items-center gap-3 bg-[#0f0a05] px-6 py-3 rounded-full">
-                        <span class="text-amber-400">★</span>
-                        <span>Up to 120 guests • Private deck • Open fire</span>
-                    </div>
                 </div>
                 <div class="rounded-3xl overflow-hidden">
-                    <img src="https://picsum.photos/id/1016/1200/800" alt="Venue" class="w-full">
+                    <img src="https://picsum.photos/id/1016/1200/800" alt="The Fireside Venue" class="w-full">
                 </div>
             </div>
         </div>
@@ -179,14 +188,14 @@
 
     <!-- HOURS -->
     <section id="hours" class="py-28 bg-[#0f0a05]">
-        <div class="max-w-screen-2xl mx-auto px-8 md:px-16 text-center">
-            <h2 class="logo-font text-6xl tracking-tight mb-12">When the fire is lit</h2>
-            <div class="max-w-md mx-auto bg-[#1a140f] rounded-3xl p-10">
-                <table class="w-full text-left text-lg">
-                    <tr class="border-b border-amber-400/20"><td class="py-5">Monday</td><td class="py-5 text-amber-400">Closed</td></tr>
-                    <tr class="border-b border-amber-400/20"><td class="py-5">Tuesday – Thursday</td><td class="py-5">12:00 – 22:00</td></tr>
-                    <tr class="border-b border-amber-400/20"><td class="py-5">Friday &amp; Saturday</td><td class="py-5">08:00 – 23:00</td></tr>
-                    <tr><td class="py-5">Sunday</td><td class="py-5">09:00 – 15:00</td></tr>
+        <div class="max-w-screen-2xl mx-auto px-8 md:px-16">
+            <h2 class="logo-font text-6xl tracking-tight text-center mb-12">Operating Hours</h2>
+            <div class="max-w-md mx-auto bg-[#1a140f] rounded-3xl p-12">
+                <table class="w-full text-left">
+                    <tr class="border-b border-amber-400/20"><td class="py-5 font-medium">Monday</td><td class="py-5 text-amber-400">Closed</td></tr>
+                    <tr class="border-b border-amber-400/20"><td class="py-5 font-medium">Tuesday – Thursday</td><td class="py-5">12:00 – 22:00</td></tr>
+                    <tr class="border-b border-amber-400/20"><td class="py-5 font-medium">Friday &amp; Saturday</td><td class="py-5">08:00 – 23:00</td></tr>
+                    <tr><td class="py-5 font-medium">Sunday</td><td class="py-5">09:00 – 15:00</td></tr>
                 </table>
             </div>
         </div>
@@ -195,53 +204,63 @@
     <!-- CONTACT -->
     <section id="contact" class="py-28 bg-[#1a140f]">
         <div class="max-w-screen-2xl mx-auto px-8 md:px-16">
-            <div class="text-center">
+            <div class="text-center mb-16">
                 <h2 class="logo-font text-6xl tracking-tight">Come sit by the fire</h2>
-                <p class="mt-6 text-xl">Frank &amp; Debbie Roberson warmly invite you</p>
+                <p class="mt-4 text-xl">We look forward to welcoming you</p>
             </div>
-            <div class="mt-16 grid md:grid-cols-3 gap-12 text-center">
-                <div>
-                    <i class="fa-solid fa-phone text-4xl text-amber-400 mb-4"></i>
-                    <p class="text-3xl">082 552 4605</p>
-                    <p class="text-3xl">066 210 5819</p>
+
+            <div class="max-w-2xl mx-auto bg-[#0f0a05] rounded-3xl p-12">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-amber-400 text-sm uppercase tracking-widest mb-4">Owners</h3>
+                        <p class="text-2xl">Frank &amp; Debbie Roberson</p>
+                    </div>
+                    <div>
+                        <h3 class="text-amber-400 text-sm uppercase tracking-widest mb-4">Contact Us</h3>
+                        <div class="space-y-4">
+                            <p><i class="fa-solid fa-phone mr-3"></i> 082 552 4605</p>
+                            <p><i class="fa-solid fa-phone mr-3"></i> 066 210 5819</p>
+                            <p><i class="fa-solid fa-envelope mr-3"></i> <a href="mailto:thefireside41@gmail.com" class="hover:text-amber-300">thefireside41@gmail.com</a></p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <i class="fa-solid fa-envelope text-4xl text-amber-400 mb-4"></i>
-                    <p class="text-3xl">thefireside41@gmail.com</p>
-                </div>
-                <div>
-                    <i class="fa-brands fa-whatsapp text-4xl text-amber-400 mb-4"></i>
-                    <a href="https://wa.me/27825524605" target="_blank" class="text-3xl hover:text-amber-300">Message us on WhatsApp</a>
+                
+                <div class="mt-12 text-center">
+                    <a href="https://wa.me/27825524605" target="_blank"
+                       class="inline-flex items-center gap-x-3 bg-amber-400 text-[#1a140f] px-10 py-5 rounded-full font-semibold">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        MESSAGE US ON WHATSAPP
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-black py-12 border-t border-amber-400/10">
+    <footer class="bg-black py-12">
         <div class="max-w-screen-2xl mx-auto px-8 text-center text-xs text-amber-400/60">
             © 2026 The Fireside Eatery &amp; Venue • Cape Town, South Africa<br>
-            Created as a premium demo for Frank &amp; Debbie Roberson
+            Owned by Frank &amp; Debbie Roberson
         </div>
     </footer>
 
     <!-- MENU MODAL -->
-    <div id="menuModal" class="fixed inset-0 bg-black/90 hidden items-center justify-center z-[100]">
+    <div id="menuModal" class="fixed inset-0 bg-black/90 hidden flex items-center justify-center z-[100]">
         <div class="bg-[#1a140f] max-w-lg w-full mx-4 rounded-3xl overflow-hidden">
             <button onclick="closeModal()" class="absolute top-6 right-6 text-3xl text-white/70 hover:text-white">✕</button>
             <img id="modalImage" src="" class="w-full h-64 object-cover">
             <div class="p-8">
-                <div class="flex justify-between items-start">
+                <div class="flex justify-between">
                     <h3 id="modalTitle" class="text-3xl font-semibold"></h3>
                     <span id="modalPrice" class="text-2xl text-amber-400"></span>
                 </div>
-                <p id="modalCategory" class="uppercase text-xs tracking-widest text-amber-400/70 mt-1"></p>
-                <p id="modalDesc" class="mt-6 text-[#f5e8d3]/80"></p>
-                <p class="mt-8 text-sm"><span class="text-amber-400">Pairing suggestion:</span> <span id="modalPairing"></span></p>
+                <p id="modalCategory" class="uppercase text-xs text-amber-400/70"></p>
+                <p id="modalDesc" class="mt-6"></p>
+                <p class="mt-8"><span class="text-amber-400">Pairing:</span> <span id="modalPairing"></span></p>
                 
                 <button onclick="addToWishlistFromModal()" 
                         class="mt-12 w-full py-5 bg-amber-400 text-[#1a140f] font-semibold rounded-full">
-                    ❤️ Add to My Fireside Wishlist
+                    ❤️ Add to Wishlist
                 </button>
             </div>
         </div>
@@ -251,9 +270,9 @@
         const menuItems = [
             { id: 1, name: "Smoked Snoek Pâté", category: "starter", price: 95, desc: "Creamy locally smoked snoek with toasted sourdough and pickles.", pairing: "Chenin Blanc", image: "https://picsum.photos/id/201/800/500" },
             { id: 2, name: "Fire-Roasted Bone Marrow", category: "starter", price: 145, desc: "With herb crust and brandy reduction.", pairing: "Aged Brandy", image: "https://picsum.photos/id/292/800/500" },
-            { id: 3, name: "400g Flame-Grilled Rib-Eye", category: "main", price: 325, desc: "Dry-aged and served with chimichurri.", pairing: "Cabernet Sauvignon", image: "https://picsum.photos/id/1060/800/500" },
+            { id: 3, name: "400g Flame-Grilled Rib-Eye", category: "main", price: 325, desc: "Dry-aged with chimichurri.", pairing: "Cabernet Sauvignon", image: "https://picsum.photos/id/1060/800/500" },
             { id: 4, name: "Slow-Cooked Lamb Shoulder", category: "main", price: 295, desc: "8 hours in the wood-fired oven.", pairing: "Pinotage", image: "https://picsum.photos/id/1080/800/500" },
-            { id: 5, name: "Dark Chocolate Fondant", category: "dessert", price: 125, desc: "With espresso shot and vanilla ice cream.", pairing: "Port", image: "https://picsum.photos/id/133/800/500" },
+            { id: 5, name: "Dark Chocolate Fondant", category: "dessert", price: 125, desc: "With espresso and vanilla ice cream.", pairing: "Port", image: "https://picsum.photos/id/133/800/500" },
             { id: 6, name: "Fireside Old Fashioned", category: "drink", price: 135, desc: "Premium brandy, bitters and orange.", pairing: "By the fire", image: "https://picsum.photos/id/1077/800/500" },
             { id: 7, name: "Premium Cigar Selection", category: "cigar", price: 250, desc: "Cuban & local cigars on the deck.", pairing: "XO Brandy", image: "https://picsum.photos/id/201/800/500" }
         ];
@@ -265,7 +284,7 @@
             grid.innerHTML = '';
             items.forEach(item => {
                 const card = document.createElement('div');
-                card.className = `menu-card bg-[#1a140f] rounded-3xl overflow-hidden cursor-pointer`;
+                card.className = 'menu-card bg-[#1a140f] rounded-3xl overflow-hidden cursor-pointer';
                 card.innerHTML = `
                     <img src="${item.image}" class="w-full h-64 object-cover">
                     <div class="p-6">
@@ -274,7 +293,7 @@
                             <span class="text-amber-400">R${item.price}</span>
                         </div>
                         <p class="text-xs uppercase text-amber-400/70">${item.category}</p>
-                        <p class="text-sm mt-3 text-[#f5e8d3]/80 line-clamp-2">${item.desc}</p>
+                        <p class="text-sm mt-3 text-[#f5e8d3]/80">${item.desc}</p>
                     </div>
                 `;
                 card.onclick = () => showModal(item);
@@ -288,11 +307,11 @@
             const maxP = parseInt(document.getElementById('priceRange').value);
             document.getElementById('maxPrice').textContent = `R${maxP}`;
 
-            const filtered = menuItems.filter(i => {
-                return (i.name.toLowerCase().includes(search) || i.desc.toLowerCase().includes(search)) &&
-                       (cat === 'all' || i.category === cat) &&
-                       i.price <= maxP;
-            });
+            const filtered = menuItems.filter(i => 
+                (i.name.toLowerCase().includes(search) || i.desc.toLowerCase().includes(search)) &&
+                (cat === 'all' || i.category === cat) &&
+                i.price <= maxP
+            );
             renderMenu(filtered);
         }
 
@@ -308,13 +327,13 @@
         }
 
         function closeModal() {
-            const m = document.getElementById('menuModal');
-            m.classList.add('hidden');
-            m.classList.remove('flex');
+            const modal = document.getElementById('menuModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
         }
 
         function addToWishlistFromModal() {
-            alert("Added to your Fireside Wishlist 🔥");
+            alert("❤️ Added to your Fireside Wishlist");
             closeModal();
         }
 
@@ -322,7 +341,6 @@
             document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
         }
 
-        // Init
         window.onload = () => {
             renderMenu(menuItems);
             const modal = document.getElementById('menuModal');
