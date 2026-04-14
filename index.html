@@ -3,10 +3,7 @@
 <html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Infranex | Full-Stack Development &amp; Managed IT Solutions</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Inter:wght@300..700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -83,196 +80,219 @@
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .editorial-grid {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            gap: 2rem;
-        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-headline { font-family: 'Manrope', sans-serif; }
     </style>
 </head>
-<body class="bg-surface font-body text-on-background antialiased">
-<!-- TopNavBar -->
-<header class="fixed top-0 left-0 right-0 z-50 bg-blue-50/80 backdrop-blur-xl transition-all duration-300">
+<body class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Bar -->
+<header class="bg-blue-50/80 dark:bg-slate-950/80 backdrop-blur-xl docked full-width top-0 z-50 tonal-shift-bg flat no shadows">
 <nav class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20 w-full">
-<div class="flex items-center gap-3">
-<img alt="Infranex Logo" class="h-10 w-auto" data-alt="Modern abstract geometric logo representing connectivity and precision using blue tonal gradients on a white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZOnmzzVOlrNM2ssFUHtWJ60JUKoUG2V32omUjMMt9v6UTFY82JfAcZJIxyM4R7CnqbQ1LkO5SUgXuIKcFX0cK4VRryoBoD5d60qeHpCz4FL_JTPGRHeZIttLZQk1klWkba9lcxvj8ql--D14SBVfb7SZONsG1vNb9Pp1KDyXKzo7BY2CA3CN5_OQC4GBYrrCas-W2JoYkou0ntAoQFMVCuUMPY-weF_CGL0qGBzD4Uqz-qMUlacrP9wifwhTmms214a6my1MCNlLP"/>
-<span class="text-2xl font-black text-blue-800 tracking-tighter font-headline">Infranex</span>
-</div>
-<div class="hidden md:flex items-center gap-8">
-<a class="font-headline tracking-tight font-bold text-sm text-blue-700 border-b-2 border-blue-700 pb-1" href="#">Services</a>
-<a class="font-headline tracking-tight font-bold text-sm text-slate-600 hover:text-blue-600 transition-colors" href="#">Solutions</a>
-<a class="font-headline tracking-tight font-bold text-sm text-slate-600 hover:text-blue-600 transition-colors" href="#">Contact</a>
-</div>
 <div class="flex items-center gap-4">
-<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-headline font-bold text-sm hover:opacity-90 transition-opacity">
-                    Get Started
-                </button>
+<img alt="Precision Editorial Logo" class="h-10 w-auto" data-alt="minimalist architectural logo for a tech company using geometric shapes in shades of deep blue and white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkMarJGf3Rn_wjqEChDR3WQ_D0GMaO3aiXLQUthg-SJP12xLOTCDNkCiVBi3jesNnwMw9Zq3fcD03tuXCIRPVRYJcTcb8c7p359vHkw149oFhs9ZZLPndaZ0xwk8ah8S20Xq8uSOr_IO_HYSnD8fBzU7iFXL248p7eVwRdNxj_GYlp6-n-ztqrGCnPAlmZ1s_Noi78QD0s4mKhVMSea7V0F0qMsowJw49A9OUwS0TTbr1KIZ0uv8eRcBJiMGlS1XaDuSlV_EXwNQgm"/>
+<span class="text-2xl font-black text-blue-800 dark:text-blue-50 tracking-tighter">Precision Editorial</span>
 </div>
+<div class="hidden md:flex items-center gap-10 font-manrope tracking-tight font-bold text-sm">
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">Services</a>
+<a class="text-blue-700 dark:text-blue-400 border-b-2 border-blue-700 dark:border-blue-400 pb-1" href="#">Solutions</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-lg text-sm font-bold tracking-tight hover:shadow-lg transition-all transform active:scale-95 duration-200">
+                Get Started
+            </button>
 </nav>
 </header>
-<main class="pt-20">
-<!-- Hero Section: Editorial Layout -->
-<section class="relative min-h-[921px] flex items-center overflow-hidden px-8 py-24">
-<div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-<div class="lg:col-span-7 z-10">
-<span class="inline-block px-4 py-1.5 rounded-full bg-primary-container text-on-primary-container text-[10px] font-bold tracking-widest uppercase mb-6">
-                        Architecting the Future
-                    </span>
-<h1 class="text-6xl md:text-8xl font-headline font-extrabold text-on-background tracking-tighter leading-[0.95] mb-8">
-                        Full-Stack <br/><span class="text-primary italic">Development</span> &amp; <br/>Managed IT
-                    </h1>
-<p class="text-lg md:text-xl text-on-surface-variant max-w-xl mb-10 leading-relaxed">
-                        We deliver high-end digital infrastructure and custom software solutions designed for global scale. Precise, reliable, and unapologetically modern.
+<main>
+<!-- Hero Section: Editorial Header -->
+<section class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+<div class="md:col-span-8">
+<span class="text-primary font-bold tracking-widest text-xs uppercase mb-6 block">The Digital Architect</span>
+<h1 class="text-6xl md:text-8xl font-black tracking-tighter text-on-background leading-[0.9]">
+                        Systems of <br/> <span class="text-primary-container">Excellence.</span>
+</h1>
+</div>
+<div class="md:col-span-4 pb-4">
+<p class="text-on-surface-variant text-lg leading-relaxed font-light">
+                        We design, build, and secure the digital foundations that allow modern enterprises to scale without friction.
                     </p>
-<div class="flex flex-wrap gap-4">
-<button class="bg-primary hover:bg-surface-tint text-on-primary px-8 py-4 rounded-lg font-headline font-bold text-lg shadow-lg transition-all duration-300">
-                            Launch Project
-                        </button>
-<button class="border border-outline/20 hover:bg-surface-container-low text-primary px-8 py-4 rounded-lg font-headline font-bold text-lg transition-all duration-300">
-                            Our Portfolio
-                        </button>
 </div>
 </div>
-<div class="lg:col-span-5 relative">
-<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative">
-<img alt="Tech infrastructure" class="w-full h-full object-cover" data-alt="Close up of high-tech glowing blue server racks in a data center with shallow depth of field and professional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhEJ-TDilt2OY-S9q3XIDwc-CfkDyDWH7WTzYsB_TSdBhL_94_TRk-J-Lxrdi-E8nzeqYWVu7M7_uTVoatQJ5FaooNU49xlvaqMG9XpipA02xdOBgF9k4WWE9KKccYM-QrS0jj_iRGtIm0hL0rVlxg0I9yMXpD4BeBXY21ZiA6c_Z6G9hb4_W8LdMLvg7EmIkfZ81Lt7kG0HBI6myMBf325ij6PkOl3rIFt4G2MKOINA4XCBwrv0nMSHSu5kQaMYjdLK1LpXjRs6ky"/>
-<div class="absolute inset-0 bg-gradient-to-t from-blue-900/40 to-transparent"></div>
+</section>
+<!-- Digital Transformation Section (Bento Grid) -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-16 gap-6">
+<h2 class="text-4xl font-black tracking-tight text-on-background">Digital Transformation</h2>
+<p class="max-w-md text-on-surface-variant">Modernizing legacy workflows through precision cloud architecture and automated intelligence.</p>
 </div>
-<!-- Accent Element -->
-<div class="absolute -bottom-8 -left-8 bg-surface-container-lowest p-8 rounded-lg shadow-xl border border-outline-variant/10 hidden md:block">
-<div class="flex items-center gap-4 mb-4">
-<span class="material-symbols-outlined text-primary text-4xl">verified_user</span>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Main Feature -->
+<div class="md:col-span-2 bg-surface-container-lowest p-10 rounded-xl flex flex-col justify-between group hover:-translate-y-1 transition-transform border border-outline-variant/10">
 <div>
-<div class="text-sm font-bold font-headline">99.9% Uptime</div>
-<div class="text-xs text-on-surface-variant">Guaranteed SLA</div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6">cloud_sync</span>
+<h3 class="text-2xl font-bold mb-4">Cloud Native Migration</h3>
+<p class="text-on-surface-variant leading-relaxed max-w-lg">Zero-downtime transitions to containerized environments, optimizing for both performance and operational cost reduction.</p>
+</div>
+<div class="mt-12 flex gap-4">
+<span class="px-3 py-1 bg-surface-container text-primary text-xs font-bold rounded-full">KUBERNETES</span>
+<span class="px-3 py-1 bg-surface-container text-primary text-xs font-bold rounded-full">AWS/AZURE</span>
 </div>
 </div>
-<div class="flex -space-x-2">
-<div class="w-8 h-8 rounded-full bg-slate-200 border-2 border-surface"></div>
-<div class="w-8 h-8 rounded-full bg-slate-300 border-2 border-surface"></div>
-<div class="w-8 h-8 rounded-full bg-slate-400 border-2 border-surface"></div>
-<div class="flex items-center justify-center w-8 h-8 rounded-full bg-primary text-on-primary text-[8px] font-bold border-2 border-surface">+50</div>
+<!-- Stats Card -->
+<div class="bg-primary text-on-primary p-10 rounded-xl flex flex-col justify-center items-center text-center">
+<div class="text-6xl font-black mb-2">40%</div>
+<p class="text-on-primary/80 text-sm font-bold tracking-widest uppercase">Avg. Efficiency Gain</p>
 </div>
+<!-- Small Feature -->
+<div class="bg-surface-container-highest p-8 rounded-xl border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary mb-4">analytics</span>
+<h4 class="text-lg font-bold mb-2">Data Intelligence</h4>
+<p class="text-sm text-on-surface-variant">Transforming fragmented data silos into actionable real-time insights.</p>
+</div>
+<div class="bg-surface-container-highest p-8 rounded-xl border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary mb-4">auto_mode</span>
+<h4 class="text-lg font-bold mb-2">Process Automation</h4>
+<p class="text-sm text-on-surface-variant">Eliminating repetitive manual tasks with high-precision CI/CD pipelines.</p>
+</div>
+<div class="bg-surface-container-highest p-8 rounded-xl border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary mb-4">architecture</span>
+<h4 class="text-lg font-bold mb-2">Legacy Refactoring</h4>
+<p class="text-sm text-on-surface-variant">Safely evolving monolithic systems into modular microservices.</p>
 </div>
 </div>
 </div>
 </section>
-<!-- Trust Section (Tonal Shift) -->
-<section class="bg-surface-container-low py-16 px-8">
-<div class="max-w-7xl mx-auto">
-<p class="text-center text-on-surface-variant text-xs font-bold uppercase tracking-[0.3em] mb-12">Trusted by industry leaders</p>
-<div class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale transition-all hover:grayscale-0">
-<span class="text-2xl font-headline font-extrabold tracking-tighter">TECHFLOW</span>
-<span class="text-2xl font-headline font-extrabold tracking-tighter">PRISM.IO</span>
-<span class="text-2xl font-headline font-extrabold tracking-tighter">DATASTRAT</span>
-<span class="text-2xl font-headline font-extrabold tracking-tighter">NEXUS</span>
-<span class="text-2xl font-headline font-extrabold tracking-tighter">ZENITH</span>
+<!-- Infrastructure Optimization (Asymmetric Layout) -->
+<section class="py-32 px-8 max-w-7xl mx-auto overflow-hidden">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<div class="absolute -top-12 -left-12 w-48 h-48 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-xl relative z-10">
+<img alt="Clean data visualization dashboard" class="rounded-lg w-full h-auto" data-alt="clean minimal UI dashboard showing network performance metrics with sleek line charts in blue and slate tones on a white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBKrbtq2IDf2Bb0kdPn6PczKhimBA4mKgPV6Jz36kKfqB-098PRBeKC9lgy571gA4BiVO1u_CtZFaH3QS7JPygzNyap4oY9hBB4vvTcX1cToBczAjIT4i-E7Si7b81SO1L6lcoie3aWfRuQpTkRJlg_HlGYUzp-Zsy2vzFgSoPiSmCdzGKZ25Jukeneze54Kw0IUjCBsP_pUCi68vAPALTNkUtpTDes5yr38uitnj8Mw-4hnzProWXQ5KTLSuANS2OsVNTGaRCMKjM"/>
+</div>
+<div class="mt-8 grid grid-cols-2 gap-4">
+<div class="bg-surface-container p-6 rounded-lg">
+<div class="text-sm text-primary font-bold mb-1">Latency Reduction</div>
+<div class="h-1 w-full bg-outline-variant/20 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[85%]"></div>
 </div>
 </div>
-</section>
-<!-- Core Services: Bento Grid Layout -->
-<section class="py-32 px-8 bg-surface">
-<div class="max-w-7xl mx-auto">
-<div class="mb-20">
-<h2 class="text-4xl md:text-5xl font-headline font-extrabold tracking-tight mb-6">Core Competencies</h2>
-<p class="text-on-surface-variant max-w-2xl text-lg">We provide end-to-end technical stewardship. From the first line of code to the final security patch, our precision is your advantage.</p>
+<div class="bg-surface-container p-6 rounded-lg">
+<div class="text-sm text-primary font-bold mb-1">Resource Uptime</div>
+<div class="h-1 w-full bg-outline-variant/20 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[99%]"></div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-<!-- Custom Web Apps -->
-<div class="md:col-span-8 group relative bg-surface-container-low rounded-xl p-12 overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:bg-surface-container">
-<div class="relative z-10 h-full flex flex-col justify-between">
+</div>
+</div>
+</div>
 <div>
-<span class="material-symbols-outlined text-primary text-5xl mb-8">terminal</span>
-<h3 class="text-3xl font-headline font-bold mb-4">Custom Web Apps</h3>
-<p class="text-on-surface-variant text-lg max-w-md">Scalable React, Vue, and Node.js solutions built for performance and user experience.</p>
-</div>
-<div class="mt-12 flex flex-wrap gap-2">
-<span class="bg-white/50 backdrop-blur-sm px-3 py-1 rounded text-[10px] font-bold text-primary">REACT</span>
-<span class="bg-white/50 backdrop-blur-sm px-3 py-1 rounded text-[10px] font-bold text-primary">TYPESCRIPT</span>
-<span class="bg-white/50 backdrop-blur-sm px-3 py-1 rounded text-[10px] font-bold text-primary">CLOUD-NATIVE</span>
-</div>
-</div>
-<div class="absolute bottom-[-10%] right-[-10%] w-2/3 opacity-10 group-hover:opacity-20 transition-opacity">
-<span class="material-symbols-outlined text-[300px]">code</span>
-</div>
-</div>
-<!-- Managed IT -->
-<div class="md:col-span-4 bg-primary text-on-primary rounded-xl p-12 flex flex-col justify-between transition-all duration-500 hover:-translate-y-2">
+<h2 class="text-4xl font-black tracking-tight text-on-background mb-8">Infrastructure Optimization</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-10 font-light">
+                        Engineering stability at every layer. We don't just manage hardware; we architect resilient environments that adapt to traffic surges and hardware failures automatically.
+                    </p>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<div class="mt-1 w-2 h-2 rounded-full bg-primary shrink-0"></div>
 <div>
-<span class="material-symbols-outlined text-4xl mb-8">settings_suggest</span>
-<h3 class="text-2xl font-headline font-bold mb-4">Managed IT</h3>
-<p class="text-on-primary-container/80">Proactive 24/7 monitoring and cloud infrastructure management.</p>
+<span class="font-bold block">Network Architecture</span>
+<p class="text-sm text-on-surface-variant">Low-latency global distribution via edge computing and optimized SDN.</p>
 </div>
-<a class="flex items-center gap-2 font-bold font-headline mt-8 hover:gap-4 transition-all" href="#">
-                            Learn More <span class="material-symbols-outlined">arrow_forward</span>
-</a>
+</li>
+<li class="flex items-start gap-4">
+<div class="mt-1 w-2 h-2 rounded-full bg-primary shrink-0"></div>
+<div>
+<span class="font-bold block">Cost Governance</span>
+<p class="text-sm text-on-surface-variant">Advanced FinOps to identify and eliminate wasted cloud expenditure.</p>
 </div>
-<!-- Security -->
-<div class="md:col-span-4 bg-surface-container-highest rounded-xl p-12 transition-all duration-500 hover:-translate-y-2">
-<span class="material-symbols-outlined text-tertiary text-4xl mb-8">shield_lock</span>
-<h3 class="text-2xl font-headline font-bold mb-4">Cyber Security</h3>
-<p class="text-on-surface-variant">Zero-trust architecture and continuous threat detection protocols.</p>
+</li>
+<li class="flex items-start gap-4">
+<div class="mt-1 w-2 h-2 rounded-full bg-primary shrink-0"></div>
+<div>
+<span class="font-bold block">24/7 Monitoring</span>
+<p class="text-sm text-on-surface-variant">Predictive AI diagnostics that solve bottlenecks before they occur.</p>
 </div>
-<!-- Cloud Migration -->
-<div class="md:col-span-8 bg-surface-container-low border border-outline-variant/10 rounded-xl p-12 flex flex-col md:flex-row gap-12 items-center transition-all duration-500 hover:-translate-y-2">
-<div class="flex-1">
-<h3 class="text-2xl font-headline font-bold mb-4">Cloud Migration</h3>
-<p class="text-on-surface-variant mb-6">Transitioning legacy systems to modern AWS/Azure environments without downtime.</p>
-<ul class="space-y-3">
-<li class="flex items-center gap-2 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Zero-Downtime Strategy</li>
-<li class="flex items-center gap-2 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Cost Optimization</li>
+</li>
 </ul>
 </div>
-<div class="w-full md:w-1/3 aspect-video bg-white rounded shadow-sm flex items-center justify-center">
-<img alt="Cloud Infrastructure" class="w-full h-full object-cover rounded" data-alt="Minimalist top down view of a sleek silver laptop on a clean white desk with soft morning light shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6bNm6HWQPinWcy-6Dna0R9GS5VfYjdYT-NfK9nVbV73Qo8V9vSFNG27T66Zw-R_2Ci4-LGLQgo6DuVvXtoNlIObjX1fugan8F7YyP27wVqGbW2inf3FwBCAxuoO5wMLmVMY2pk0Q9HRRDCD5-2M2ojchZDqjwoDECAJZg2Q6YDkcUgTk8VTetjJ6XN72FbDOq_RhKppCeBL-XEEK8y7iO9bN2x-DOe8ikZkudNf5GE1lvfg102d-TuTWx4TEZ5I_ZCTk2RFnb8NZX"/>
 </div>
+</section>
+<!-- Cybersecurity Management (Atmospheric Dark-ish Section) -->
+<section class="py-24 bg-[#001f2a] text-white">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center max-w-3xl mx-auto mb-20">
+<h2 class="text-4xl font-black tracking-tight mb-6">Cybersecurity Management</h2>
+<p class="text-surface-variant/70 text-lg">Zero-trust frameworks designed to protect intellectual property without hindering organizational velocity.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<div class="bg-white/5 backdrop-blur-md p-8 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-secondary-container mb-6 block text-3xl">verified_user</span>
+<h4 class="font-bold text-lg mb-2">Zero Trust</h4>
+<p class="text-xs text-surface-variant/60 leading-relaxed">Identity-centric security that assumes no perimeter and verifies every request.</p>
+</div>
+<div class="bg-white/5 backdrop-blur-md p-8 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-secondary-container mb-6 block text-3xl">policy</span>
+<h4 class="font-bold text-lg mb-2">Compliance</h4>
+<p class="text-xs text-surface-variant/60 leading-relaxed">Automated audits for GDPR, SOC2, and HIPAA across all cloud platforms.</p>
+</div>
+<div class="bg-white/5 backdrop-blur-md p-8 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-secondary-container mb-6 block text-3xl">security_update_good</span>
+<h4 class="font-bold text-lg mb-2">Threat Intel</h4>
+<p class="text-xs text-surface-variant/60 leading-relaxed">Proactive vulnerability scanning and real-time incident response protocols.</p>
+</div>
+<div class="bg-white/5 backdrop-blur-md p-8 rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-secondary-container mb-6 block text-3xl">vpn_key</span>
+<h4 class="font-bold text-lg mb-2">Encryption</h4>
+<p class="text-xs text-surface-variant/60 leading-relaxed">End-to-end data encryption at rest and in transit with quantum-ready keys.</p>
 </div>
 </div>
 </div>
 </section>
-<!-- CTA Section -->
-<section class="py-24 px-8">
-<div class="max-w-5xl mx-auto bg-surface-container-low rounded-3xl p-12 md:p-24 text-center relative overflow-hidden">
-<div class="absolute top-0 right-0 p-12 text-primary/5">
-<span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'FILL' 1;">architecture</span>
+<!-- Final CTA: The Tech Stack -->
+<section class="py-24 px-8 max-w-7xl mx-auto text-center">
+<h3 class="text-xs font-bold tracking-[0.3em] uppercase text-primary mb-12">Engineered with Precision</h3>
+<div class="flex flex-wrap justify-center gap-4 mb-20">
+<span class="bg-surface-container px-6 py-2 rounded-full text-sm font-semibold text-on-surface-variant border border-outline-variant/10">AWS Certified</span>
+<span class="bg-surface-container px-6 py-2 rounded-full text-sm font-semibold text-on-surface-variant border border-outline-variant/10">Terraform</span>
+<span class="bg-surface-container px-6 py-2 rounded-full text-sm font-semibold text-on-surface-variant border border-outline-variant/10">ISO 27001</span>
+<span class="bg-surface-container px-6 py-2 rounded-full text-sm font-semibold text-on-surface-variant border border-outline-variant/10">ServiceNow</span>
+<span class="bg-surface-container px-6 py-2 rounded-full text-sm font-semibold text-on-surface-variant border border-outline-variant/10">Cisco Gold</span>
+<span class="bg-surface-container px-6 py-2 rounded-full text-sm font-semibold text-on-surface-variant border border-outline-variant/10">Azure Expert</span>
 </div>
+<div class="bg-primary p-16 rounded-2xl relative overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-br from-primary to-primary-container transition-transform group-hover:scale-105 duration-700"></div>
 <div class="relative z-10">
-<h2 class="text-4xl md:text-6xl font-headline font-extrabold tracking-tighter mb-8">Ready to build your <br/><span class="text-primary">next-gen infrastructure?</span></h2>
-<p class="text-on-surface-variant text-lg max-w-xl mx-auto mb-12">
-                        Join 200+ companies that rely on Infranex for precision-engineered technology solutions.
-                    </p>
-<div class="flex flex-col md:flex-row items-center justify-center gap-6">
-<button class="w-full md:w-auto bg-primary text-on-primary px-10 py-5 rounded-lg font-headline font-extrabold text-xl shadow-xl hover:scale-105 transition-transform">
-                            Consult Our Experts
-                        </button>
-<a class="text-on-surface font-bold hover:text-primary transition-colors" href="#">View Case Studies</a>
-</div>
+<h2 class="text-3xl md:text-5xl font-black text-white mb-6">Ready to architect your future?</h2>
+<p class="text-on-primary/80 mb-10 max-w-xl mx-auto font-light text-lg">Schedule a technical audit with our lead consultants today.</p>
+<button class="bg-white text-primary px-10 py-4 rounded-lg font-black tracking-tight hover:shadow-2xl transition-all transform active:scale-95">
+                        Consult Our Architects
+                    </button>
 </div>
 </div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-slate-50 border-t-0 py-16 px-8">
-<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+<footer class="bg-slate-50 dark:bg-slate-950 full-width border-t-0 tonal-shift-bg-to-surface-container-low">
+<div class="max-w-7xl mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
 <div>
-<div class="flex items-center gap-3 mb-6">
-<img alt="Infranex Logo" class="h-6 w-auto" data-alt="Small version of the Infranex logo for footer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJxt9M7pXzNTFTySJfZfuThzEX92_yteKkylK6KOXdrUw3CaUk75Xn_ZMAuWy8PRfU7MXricAExjIu-fK5Ip0iHmfEifxauYaGcoULiyhgZhBVo45RgQSvHAo_eMmouqyfTOqjO5JxjPoOoeAGf0zKse_-V81Y3qET1VoaLy_kGMvk-6Td56kS_Z2NikMqIJXS1-RMphoV2a9259MLFu6KSgRPhUmbYeU6_TWvl5_DCec1E_UtftbUSU_Hu_ldp1k0Rk2F1Ljn6F-c"/>
-<span class="text-lg font-bold text-slate-900 tracking-tighter">Infranex</span>
+<div class="text-lg font-bold text-slate-900 dark:text-white mb-4">Precision Editorial</div>
+<p class="text-slate-500 dark:text-slate-400 font-inter text-xs leading-relaxed max-w-xs">
+                    Building the digital infrastructure for the next generation of industry leaders. Precision, security, and scalability.
+                </p>
 </div>
-<p class="text-slate-500 max-w-xs text-xs mb-8">Precision Editorial in IT. Architecting reliable digital ecosystems for modern enterprises.</p>
-<p class="text-slate-500 text-xs leading-relaxed font-inter">© 2024 Precision Editorial. All rights reserved.</p>
+<div class="flex flex-col md:flex-row gap-8 md:justify-end items-start md:items-center">
+<div class="flex flex-wrap gap-6 font-inter text-xs leading-relaxed">
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 underline-offset-4 hover:underline transition-opacity opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 underline-offset-4 hover:underline transition-opacity opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 underline-offset-4 hover:underline transition-opacity opacity-80 hover:opacity-100" href="#">Security</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-300 underline-offset-4 hover:underline transition-opacity opacity-80 hover:opacity-100" href="#">Sitemap</a>
 </div>
-<div class="flex flex-wrap gap-x-12 gap-y-6 md:justify-end">
-<div class="flex flex-col gap-3">
-<h4 class="text-xs font-bold text-on-background uppercase tracking-widest mb-2">Company</h4>
-<a class="text-xs text-slate-500 hover:text-blue-600 transition-opacity hover:underline underline-offset-4" href="#">Privacy Policy</a>
-<a class="text-xs text-slate-500 hover:text-blue-600 transition-opacity hover:underline underline-offset-4" href="#">Terms of Service</a>
-<a class="text-xs text-slate-500 hover:text-blue-600 transition-opacity hover:underline underline-offset-4" href="#">Security</a>
 </div>
-<div class="flex flex-col gap-3">
-<h4 class="text-xs font-bold text-on-background uppercase tracking-widest mb-2">Resources</h4>
-<a class="text-xs text-slate-500 hover:text-blue-600 transition-opacity hover:underline underline-offset-4" href="#">Sitemap</a>
-<a class="text-xs text-slate-500 hover:text-blue-600 transition-opacity hover:underline underline-offset-4" href="#">Cookie Policy</a>
+<div class="md:col-span-2 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="text-slate-500 dark:text-slate-400 font-inter text-xs leading-relaxed">© 2024 Precision Editorial. All rights reserved.</span>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors">hub</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors">terminal</span>
 </div>
 </div>
 </div>
